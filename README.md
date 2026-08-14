@@ -57,15 +57,15 @@ In many cases though, we want the array to start with known initial values. \
 We can use an array 'initializer' to list out all of the values manually. \
 The expression looks like this for creating an array with initial values:
 ```java
-new ELEMENT_TYPE[]{element1, element2, element3, ...}
+new ELEMENT_TYPE[] {element1, element2, element3, ...}
 ```
 Where `element1`, etc. are values of type `ELEMENT_TYPE`. Any number of elements can be used, including 0 elements. \
 Note that since we listed out each element, we also didn't have to specify the array size between the square brackets; Java automatically figures out the length. \
 Concrete example:
 ```java
 int[] numbers;
-numbers = new int[]{1, 2, 4, 8};
-numbers = new int[]{-1};
+numbers = new int[] {1, 2, 4, 8};
+numbers = new int[] {-1};
 ```
 When using this as the initial value of a variable or field declaration, we can omit the `new ELEMENT_TYPE[]` part (just put `{a, b, ...}`) because the type is already known from the declaration in the same statement:
 ```
