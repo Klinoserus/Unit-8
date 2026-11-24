@@ -1,8 +1,8 @@
 import java.util.HashSet;
 
-public class Directory {
+public class Directory implements Entry {
 
     public String name;
     public Directory parentDirectory;
-    public HashSet<String> entries;
+    public HashSet<String> entryList;
 }
